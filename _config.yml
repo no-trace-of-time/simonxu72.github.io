@@ -17,7 +17,7 @@ title: 函数人生 人生寒暑
 email: simon.xu72@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   记录erlang函数式编程中的心得体会
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "simonxu72.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: simon_xu72
 github_username:  simonxu72
