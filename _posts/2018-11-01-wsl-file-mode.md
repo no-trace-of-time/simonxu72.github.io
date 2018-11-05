@@ -23,7 +23,7 @@ ls -l a
 
 目前的问题：
 
-** vscode在保存新文件后，默认的模式就是777，需要能设置为644
+## vscode在保存新文件后，默认的模式就是777，需要能设置为644
 
 根据[微软2018/04的Windows 10更新][chmod-chown-wsl-improvements]，使用windows上的编辑器（比如VSCode）编辑文件，会清除文件的linux metadata。
 这时，文件会恢复到默认的权限。
@@ -43,7 +43,7 @@ There are a few things to make sure you're aware of when tinkering with the new 
 重新启动后，vscode新创建的文件，wsl下权限变为：755，是起作用了！
 把umask修改为133，应当符合基本要求了
 
-** 为了方便测试，需要重新启动wsl实例，但是不启动windows
+## 为了方便测试，需要重新启动wsl实例，但是不启动windows
 
 {% highlight ruby %}
 net stop LxssManager
@@ -58,7 +58,7 @@ net start LxssManager
 options = "metadata,umask=022"
 {% endhighlight %}
 
-** wsl.conf的参考内容在[这里][automatically-config-wsl]
+## wsl.conf的参考内容在[这里][automatically-config-wsl]
 
 [chmod-chown-wsl-improvements]: https://blogs.msdn.microsoft.com/commandline/2018/01/12/chmod-chown-wsl-improvements/
 [automatically-config-wsl]: https://blogs.msdn.microsoft.com/commandline/2018/02/07/automatically-configuring-wsl/
